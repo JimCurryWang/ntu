@@ -1,0 +1,101 @@
+@import "style.css"
+
+/*    base */
+
+body{
+    /*100%*/
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    line-height: 150%
+}
+
+a{
+    color: #e40000;
+    text-decoration: none; 
+}
+
+a:hover{
+    text-decoration: underline;/*滑鼠點到有下底線*/
+}
+
+/*LAYOUT*/
+
+.container{
+    width: 1024px;
+    background: #369;
+    margin: 0 auto;  /*上下為0 左右auto 自動計算 讓版面置中*/
+}
+
+
+.bg-light{
+    background: #404549;
+}
+.bg-light a {
+    color: lightgray;
+}
+
+.bg-dark{
+    background: #2a2e31;
+}
+bg-dark a{
+    color:rgb(180,180,180)
+}
+
+
+
+
+
+
+img-caseshow{
+    overflow: hidden;
+    
+}
+
+img-caseshow figcaption{
+    overflow: hidden;
+    
+}
+
+thumb-big{
+    float: left;
+}
+
+thumb-square{
+    float: left;
+}
+
+
+.list:nth-child(3n){
+    margin-right: 0;
+}
+
+
+logo a {
+    width: 250px;
+    height: 49px;
+    display: inline-block;
+    background: url("http://placehold.it/250*49") no-repeat 0 0  ;
+    text-indent: 50%;
+}
+
+.menu{
+    float: left;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.s-menu{
+    display: none; 
+    position: absolute;
+    padding: 20px;/*加了padding 在選單下滑時可以視為同一menu*/
+}
+
+.menu li:hover .s-menu{   /*移過去出現移走消失*/
+    display: block;
+}
+
+.s-menu li{
+    display: block;
+}

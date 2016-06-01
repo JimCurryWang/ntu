@@ -1,0 +1,15 @@
+@import "base.css"
+    
+/*    匯入另一隻css檔案,
+      就不用一直在home.html那一直加
+      (用於大型網頁)*/
+    
+h1 {
+  color: red;
+}   
+
+entry{
+    font-size: 30px;
+    color: #abcdef;
+}
+
